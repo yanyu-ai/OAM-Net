@@ -1,8 +1,12 @@
 # OAM-Net
 The project contains the V1Net model along with the CNN, AlexNet, Transformer, and V2Net architectures employed in the comparative experiments presented in the paper.
+
 ![屏幕截图 2025-05-09 145709](https://github.com/user-attachments/assets/9726c0fc-2e3b-4c2f-b332-f5661a397441)
+
 Figure 1. (a) The experimental setup for OAM generation and transmission using a 785 nm laser and a series of optical elements, with signal acquisition performed by a CCD in different OAM modes. (b) Phase distributions of OAM beams with both single-mode and superimposed-mode structures, arranged from left to right as LG, HLG, and POV modes; (c) OAM beam phase patterns superimposed with different levels of atmospheric turbulence; (d) Simulated OAM optical field distributions corresponding to the turbulence-affected phases in (c).
 ![image](https://github.com/user-attachments/assets/276d9a45-eb99-4cbe-abbe-824a05614937)
+
 Figure 2. Architecture of the MobileV1Net neural network model. The network comprises standard convolutional kernels, 3*3 and 1*1 kernels forming depthwise separable convolutions, an ECA module, BatchNorm layers, ReLU activation functions, and linear classifier layers. The left part of the figure illustrates sample input data from the OAM dataset, including simulated LG, HLG, and POV beam images. These examples cover both single-mode beams and combinations of multiple mode orders. The right part shows the schematic of the model architecture.
 ![image](https://github.com/user-attachments/assets/af73258e-f226-4776-8f57-617629b05a49)
+
 Figure3. Small-sample recognition results on simulated OAM datasets with superimposed turbulence phase distortions. (a) Test accuracy for the 40-class classification task under varying training set sizes of 5, 10, 50, and 100 samples per class. (b) Grad-CAM-based heatmaps superimposed on LG, HLG, and POV images of different orders, illustrating that after small-sample training, the MobileNetV1 (V1Net) model effectively focuses on informative regions of the input. (c1)-(c2) Confusion matrices for the 5-sample-per-class classification task, demonstrating the performance of V1Net in the 40-class scenario.
